@@ -1,2 +1,2 @@
 # go_lang
-This repository is primarily for learning the basics of Go Language
+This repository is used for learning the basics of Go Language
