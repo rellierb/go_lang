@@ -1,11 +1,11 @@
 package main
 
-import {
+import (
 	"fmt"
 	"net/http"
 	"strings"
-	"logs"
-}
+	"log"
+)
 
 func sayhelloName(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm() // Parse arguments, you have to call this by yourself
@@ -17,7 +17,7 @@ func sayhelloName(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("key:", k)
 		fmt.Println("val:", strings.Join(v, ""))
 	}
-	fmt.Fprintf(w, "Hello astaxie!") // send data to client side
+	fmt.Fprintf(w, "Hello World on Go!") // send data to client side
 }
 
 func main() {
